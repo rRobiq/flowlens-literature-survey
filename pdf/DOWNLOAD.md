@@ -1,38 +1,28 @@
 # PDF sources
 
-Only openly licensed documents are placed in this folder. Paywalled papers are not redistributed
-here; their DOI is given so they can be retrieved through the university library.
+Thirteen sources are cited in [`../bibliography/flowlens.bib`](../bibliography/flowlens.bib).
+Six are included here as full documents. The remaining seven are not redistributed: either the
+publisher does not permit public re-upload, or the file requires institutional access. Their DOIs
+are recorded below so they can be retrieved through the university library.
 
-## Downloaded automatically
+Every file in this folder was checked to be a genuine PDF (or plain text) rather than a publisher
+access page saved under a `.pdf` name.
 
-Run the script in this folder once:
+## Included in this folder
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\Get-Pdfs.ps1
-```
-
-It retrieves the following into this directory, named after the BibTeX key. Every file is checked
-to be a genuine PDF (or plain text) before being kept, so a publisher page returned instead of the
-document is reported as a failure rather than silently saved.
-
-| Key | Source |
-|---|---|
-| `arp2022dos.pdf` | USENIX Security 2022 (open access) |
-| `pendlebury2019tesseract.pdf` | USENIX Security 2019 (open access) |
-| `chen2016xgboost.pdf` | arXiv:1603.02754 |
-| `sarhan2022standard.pdf` | arXiv:2101.11315 |
-| `xu2024llmsecurity.pdf` | arXiv:2405.04760 |
-| `eddy2007rfc4987.txt` | RFC 4987, plain text |
-
-## Needs manual retrieval
-
-| Key | Why | Link |
+| File | Source | Licence |
 |---|---|---|
-| `lundberg2020local` | The publisher returns an access page rather than the PDF for unauthenticated requests. Retrieve it through the university library or the journal page while logged in. | https://doi.org/10.1038/s42256-019-0138-9 |
+| `arp2022dos.pdf` | Arp et al. (2022), USENIX Security | USENIX open access |
+| `pendlebury2019tesseract.pdf` | Pendlebury et al. (2019), USENIX Security | USENIX open access |
+| `chen2016xgboost.pdf` | Chen & Guestrin (2016), KDD | arXiv preprint |
+| `sarhan2022standard.pdf` | Sarhan et al. (2022), MONET | arXiv preprint |
+| `xu2024llmsecurity.pdf` | Xu et al. (2024), ACM TOSEM | arXiv preprint |
+| `eddy2007rfc4987.txt` | RFC 4987 (2007) | IETF, plain text |
 
 ## Available through the university library
 
-Not redistributed here. Save locally if needed; do not commit to a public repository.
+Not redistributed here, for copyright reasons. Save locally if needed; do not commit them to a
+public repository.
 
 | Key | DOI |
 |---|---|
@@ -43,8 +33,16 @@ Not redistributed here. Save locally if needed; do not commit to a public reposi
 | `breiman2001random` | https://doi.org/10.1023/A:1010933404324 |
 | `liu2008isolation` | https://doi.org/10.1109/ICDM.2008.17 |
 
-## Status
+## Requires institutional access
 
-- 6 open-access documents present in this folder
-- 1 to retrieve manually (`lundberg2020local`)
-- 6 available only through the library
+| Key | Note | Link |
+|---|---|---|
+| `lundberg2020local` | The publisher serves an access page rather than the file to unauthenticated requests. Available through the journal page while logged in. | https://doi.org/10.1038/s42256-019-0138-9 |
+
+## Summary
+
+| | Count |
+|---|---|
+| Sources cited | 13 |
+| Full documents included | 6 |
+| Retrievable via library or subscription | 7 |

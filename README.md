@@ -13,7 +13,7 @@ were verified against the publisher metadata.
 |---|---|
 | `notes/` | One annotation per source, grouped by theme |
 | `bibliography/flowlens.bib` | Complete BibTeX records for all thirteen sources |
-| `pdf/` | Open-access documents, plus `DOWNLOAD.md` and a download script |
+| `pdf/` | Open-access documents, and `DOWNLOAD.md` recording their availability status |
 
 ## The sources and their role in the thesis
 
@@ -82,8 +82,8 @@ or with `biblatex`:
 
 Every note names its BibTeX key on the first line, so notes and bibliography stay in correspondence.
 
-## Obtaining the PDFs
+## PDFs
 
-Only openly licensed documents are included. Run `pdf/Get-Pdfs.ps1` once to download the ones with
-a direct open-access link; the remainder are reachable through the university library and are listed
-with their DOI in `pdf/DOWNLOAD.md`.
+Six openly licensed documents are included in `pdf/`. The remaining seven sources are reachable
+through the university library or a subscription; `pdf/DOWNLOAD.md` records which is which, with
+the DOI for each, and explains why they are not redistributed here.
