@@ -3,7 +3,7 @@
 Only openly licensed documents are placed in this folder. Paywalled papers are not redistributed
 here; their DOI is given so they can be retrieved through the university library.
 
-## Open access — downloaded automatically
+## Downloaded automatically
 
 Run the script in this folder once:
 
@@ -11,7 +11,9 @@ Run the script in this folder once:
 powershell -ExecutionPolicy Bypass -File .\Get-Pdfs.ps1
 ```
 
-It retrieves the following into this directory, named after the BibTeX key:
+It retrieves the following into this directory, named after the BibTeX key. Every file is checked
+to be a genuine PDF (or plain text) before being kept, so a publisher page returned instead of the
+document is reported as a failure rather than silently saved.
 
 | Key | Source |
 |---|---|
@@ -20,13 +22,13 @@ It retrieves the following into this directory, named after the BibTeX key:
 | `chen2016xgboost.pdf` | arXiv:1603.02754 |
 | `sarhan2022standard.pdf` | arXiv:2101.11315 |
 | `xu2024llmsecurity.pdf` | arXiv:2405.04760 |
+| `eddy2007rfc4987.txt` | RFC 4987, plain text |
 
-## Open access — manual download
+## Needs manual retrieval
 
-| Key | Link |
-|---|---|
-| `eddy2007rfc4987` | https://www.rfc-editor.org/rfc/rfc4987.txt (plain text, not PDF) |
-| `lundberg2020local` | https://doi.org/10.1038/s42256-019-0138-9 |
+| Key | Why | Link |
+|---|---|---|
+| `lundberg2020local` | The publisher returns an access page rather than the PDF for unauthenticated requests. Retrieve it through the university library or the journal page while logged in. | https://doi.org/10.1038/s42256-019-0138-9 |
 
 ## Available through the university library
 
@@ -40,3 +42,9 @@ Not redistributed here. Save locally if needed; do not commit to a public reposi
 | `sommer2010outside` | https://doi.org/10.1109/SP.2010.25 |
 | `breiman2001random` | https://doi.org/10.1023/A:1010933404324 |
 | `liu2008isolation` | https://doi.org/10.1109/ICDM.2008.17 |
+
+## Status
+
+- 6 open-access documents present in this folder
+- 1 to retrieve manually (`lundberg2020local`)
+- 6 available only through the library
