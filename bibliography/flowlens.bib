@@ -1,0 +1,151 @@
+% ---------------------------------------------------------------------------
+% FlowLens — Literature survey bibliography
+% Flow-based network intrusion detection with explainable AI (TreeSHAP)
+% and a comparative study of small local language models
+%
+% All records verified against the publisher metadata (Crossref, USENIX
+% proceedings, arXiv) on 23 November 2025.
+% Keys follow the convention lastnameYEARkeyword.
+% ---------------------------------------------------------------------------
+
+% ------------------------------- Datasets ---------------------------------
+
+@inproceedings{sharafaldin2018toward,
+  author    = {Sharafaldin, Iman and Lashkari, Arash Habibi and Ghorbani, Ali A.},
+  title     = {Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization},
+  booktitle = {Proceedings of the 4th International Conference on Information Systems Security and Privacy (ICISSP 2018)},
+  pages     = {108--116},
+  year      = {2018},
+  doi       = {10.5220/0006639801080116}
+}
+
+@inproceedings{engelen2021troubleshooting,
+  author    = {Engelen, Gints and Rimmer, Vera and Joosen, Wouter},
+  title     = {Troubleshooting an Intrusion Detection Dataset: the {CICIDS2017} Case Study},
+  booktitle = {2021 IEEE Security and Privacy Workshops (SPW)},
+  pages     = {7--12},
+  year      = {2021},
+  doi       = {10.1109/SPW53761.2021.00009}
+}
+
+@article{sarhan2022standard,
+  author  = {Sarhan, Mohanad and Layeghy, Siamak and Portmann, Marius},
+  title   = {Towards a Standard Feature Set for Network Intrusion Detection System Datasets},
+  journal = {Mobile Networks and Applications},
+  volume  = {27},
+  number  = {1},
+  pages   = {357--370},
+  year    = {2022},
+  doi     = {10.1007/s11036-021-01843-0}
+}
+
+% ------------------------ Flow-based detection ----------------------------
+
+@inproceedings{drapergil2016characterization,
+  author    = {Draper-Gil, Gerard and Lashkari, Arash Habibi and Mamun, Mohammad Saiful Islam and Ghorbani, Ali A.},
+  title     = {Characterization of Encrypted and {VPN} Traffic using Time-related Features},
+  booktitle = {Proceedings of the 2nd International Conference on Information Systems Security and Privacy (ICISSP 2016)},
+  pages     = {407--414},
+  year      = {2016},
+  doi       = {10.5220/0005740704070414}
+}
+
+@inproceedings{sommer2010outside,
+  author    = {Sommer, Robin and Paxson, Vern},
+  title     = {Outside the Closed World: On Using Machine Learning for Network Intrusion Detection},
+  booktitle = {2010 IEEE Symposium on Security and Privacy},
+  pages     = {305--316},
+  year      = {2010},
+  doi       = {10.1109/SP.2010.25}
+}
+
+@misc{eddy2007rfc4987,
+  author       = {Eddy, Wesley M.},
+  title        = {{TCP} {SYN} Flooding Attacks and Common Mitigations},
+  howpublished = {RFC 4987},
+  organization = {IETF},
+  year         = {2007},
+  doi          = {10.17487/RFC4987}
+}
+
+% ------------------------- Machine learning -------------------------------
+
+@article{breiman2001random,
+  author  = {Breiman, Leo},
+  title   = {Random Forests},
+  journal = {Machine Learning},
+  volume  = {45},
+  number  = {1},
+  pages   = {5--32},
+  year    = {2001},
+  doi     = {10.1023/A:1010933404324}
+}
+
+@inproceedings{chen2016xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '16)},
+  pages     = {785--794},
+  year      = {2016},
+  doi       = {10.1145/2939672.2939785}
+}
+
+@inproceedings{liu2008isolation,
+  author    = {Liu, Fei Tony and Ting, Kai Ming and Zhou, Zhi-Hua},
+  title     = {Isolation Forest},
+  booktitle = {2008 Eighth IEEE International Conference on Data Mining (ICDM)},
+  pages     = {413--422},
+  year      = {2008},
+  doi       = {10.1109/ICDM.2008.17}
+}
+
+% --------------------------- Explainability -------------------------------
+
+@article{lundberg2020local,
+  author  = {Lundberg, Scott M. and Erion, Gabriel and Chen, Hugh and DeGrave, Alex and Prutkin, Jordan M. and Nair, Bala and Katz, Ronit and Himmelfarb, Jonathan and Bansal, Nisha and Lee, Su-In},
+  title   = {From Local Explanations to Global Understanding with Explainable {AI} for Trees},
+  journal = {Nature Machine Intelligence},
+  volume  = {2},
+  number  = {1},
+  pages   = {56--67},
+  year    = {2020},
+  doi     = {10.1038/s42256-019-0138-9}
+}
+
+% ------------------------ Evaluation methodology --------------------------
+
+@inproceedings{arp2022dos,
+  author    = {Arp, Daniel and Quiring, Erwin and Pendlebury, Feargus and Warnecke, Alexander and Pierazzi, Fabio and Wressnegger, Christian and Cavallaro, Lorenzo and Rieck, Konrad},
+  title     = {Dos and Don'ts of Machine Learning in Computer Security},
+  booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
+  pages     = {3971--3988},
+  address   = {Boston, MA},
+  publisher = {USENIX Association},
+  year      = {2022},
+  isbn      = {978-1-939133-31-1},
+  url       = {https://www.usenix.org/conference/usenixsecurity22/presentation/arp}
+}
+
+@inproceedings{pendlebury2019tesseract,
+  author    = {Pendlebury, Feargus and Pierazzi, Fabio and Jordaney, Roberto and Kinder, Johannes and Cavallaro, Lorenzo},
+  title     = {{TESSERACT}: Eliminating Experimental Bias in Malware Classification across Space and Time},
+  booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+  pages     = {729--746},
+  address   = {Santa Clara, CA},
+  publisher = {USENIX Association},
+  year      = {2019},
+  isbn      = {978-1-939133-06-9},
+  url       = {https://www.usenix.org/conference/usenixsecurity19/presentation/pendlebury}
+}
+
+% ---------------------- Large language models -----------------------------
+
+@article{xu2024llmsecurity,
+  author  = {Xu, Hanxiang and Wang, Shenao and Li, Ningke and Wang, Kailong and Zhao, Yanjie and Chen, Kai and Yu, Ting and Liu, Yang and Wang, Haoyu},
+  title   = {Large Language Models for Cyber Security: A Systematic Literature Review},
+  journal = {ACM Transactions on Software Engineering and Methodology},
+  year    = {2024},
+  note    = {Accepted; preprint arXiv:2405.04760},
+  eprint  = {2405.04760},
+  archivePrefix = {arXiv}
+}
